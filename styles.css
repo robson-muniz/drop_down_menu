@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+ul li img {
+ position: absolute;
+ height: 110px;
+}
+
+.fa,
+.fas {
+ margin-right: 8px;
+}
+
+#main-nav a {
+ color: #f6f7f8;
+ background-color: #2c3e50;
+ display: block;
+ height: 64px;
+ font-family: "Lato", sans-serif;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
+ transition: background .4s;
+}
+
+#main-nav a:hover {
+ background: #2e4861;
+}
+
+
+#main-nav ul {
+ list-style: none;
+ display: flex;
+}
+
+#main-nav li {
+ width: 100%;
+ text-align: center;
+ position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+ display: block;
+ top: 0px
+}
+
+.submenu li {
+ display: none;
+ position: absolute;
+ top: 0px;
+}
+
+.submenu {
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ width: 100%;
+}
+
+.submenu li:hover .submenu-2 li {
+ display: block;
+}
+
+.submenu-2 li {
+ display: none;
+}
+
+.submenu-2 {
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ top: 0px;
+ left: 100%;
+ width: 120px;
+}
+
+.arrow {
+ margin-left: 8px;
+ color: #eee;
+ font-size: 12px
+}
+
+.hero-image {
+ background-image: url(hero.jpg);
+ background-size: cover;
+ background-position: center;
+ height: calc(100vh - 64px);
+}
